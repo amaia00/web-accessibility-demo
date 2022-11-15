@@ -13,6 +13,7 @@ const Gallery = ({ prefix, altMap }: GalleryProps) => {
                     <figure className="hover:z-10" key={i}>
                         <img
                             src={img}
+                            alt={altMap?.get(i + 1)}
                             className="w-48 h-48 object-cover rounded shadow-lg hover:shadow-xl transform transition-transform duration-500 ease-in-out hover:-translate-y-1 hover:scale-150"
                             loading="lazy"
                             width="192"

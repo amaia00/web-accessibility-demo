@@ -9,6 +9,7 @@ const NavigationBar = () => {
                     <Link to="/" className={className}>
                         <svg viewBox="0 0 512 512" className="w-6 h-6 fill-current">
                             <path d="M16 256L256 64l96 72v-32h48v72l96 80h-48v192H328V288h-96v160H64V256z">
+                                <title>Home</title>
                             </path>
                         </svg>
                     </Link>
