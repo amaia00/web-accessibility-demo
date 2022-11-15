@@ -46,7 +46,7 @@ const Home = () => {
                         setEntries((entries) => entries.filter((entry, i) => i !== index))
                     }}/>
                 ) : (
-                    <p className="mt-4 text-md text-gray-600">Complete the quiz to see the results</p>)
+                    <p className="mt-4 text-md text-gray-800">Complete the quiz to see the results</p>)
                 }
             </section>
         </div>

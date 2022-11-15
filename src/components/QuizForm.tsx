@@ -155,7 +155,7 @@ const QuizForm = ({ onSubmit }: QuizFormProps) => {
 			<div className="lg:col-span-2">
 				<button
 					type="button"
-					className="bg-teal-400 border-2 border-teal-600 px-4 py-2 rounded hover:bg-teal-600 md:mt-12"
+					className="bg-teal-300 border-2 border-teal-600 px-4 py-2 rounded hover:bg-teal-400 md:mt-12"
 					onClick={() => {
 						onSubmit(currentEntry)
 						setCurrentEntry(defaultEntry)

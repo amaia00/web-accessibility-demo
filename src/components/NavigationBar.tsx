@@ -1,7 +1,7 @@
 import {Link, Outlet} from "react-router-dom";
 
 const NavigationBar = () => {
-    const className = 'hover:text-gray-500 hover:underline';
+    const className = 'hover:text-gray-700 hover:underline';
     return (
         <div className="bg-gray-100 min-h-screen px-4 py-4 md:pb-16">
             <header className=" lg:max-w-screen-lg mx-auto md:mt-8">
