@@ -161,7 +161,7 @@ const QuizForm = ({ onSubmit }: QuizFormProps) => {
 						setCurrentEntry(defaultEntry)
 					}}
 				>
-					Enviar
+					Submit
 				</button>
 			</div>
 		</form>
