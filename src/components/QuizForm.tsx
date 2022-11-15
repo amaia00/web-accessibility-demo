@@ -32,9 +32,9 @@ const QuizForm = ({ onSubmit }: QuizFormProps) => {
 	return (
 		<form className="lg:grid lg:grid-cols-2 lg:col-span-2" aria-label="Quiz Form">
 			<div className="mt-4 flex items-center">
-				<span className="w-1/2 md:w-1/3">
+				<label className="w-1/2 md:w-1/3" htmlFor="movie-input">
 					Movie Name:{' '}
-				</span>
+				</label>
 				<input
 					type="text"
 					id="movie-input"
@@ -44,6 +44,7 @@ const QuizForm = ({ onSubmit }: QuizFormProps) => {
 						const { value } = e.target
 						setCurrentEntry((entry) => ({ ...entry, movieName: value }))
 					}}
+					ref={movieNameInput}
 					required
 				/>
 			</div>
@@ -92,9 +93,9 @@ const QuizForm = ({ onSubmit }: QuizFormProps) => {
 								}))
 							}}
 						/>
-						<span className="mx-2">
+						<label className="mx-2" htmlFor="comedy-check">
 							Comedy
-						</span>
+						</label>
 					</div>
 					<div>
 						<input
@@ -110,9 +111,9 @@ const QuizForm = ({ onSubmit }: QuizFormProps) => {
 								}))
 							}}
 						/>
-						<span className="mx-2">
+						<label className="mx-2" htmlFor="crime-check">
 							Crime
-						</span>
+						</label>
 					</div>
 					<div>
 						<input
@@ -128,9 +129,9 @@ const QuizForm = ({ onSubmit }: QuizFormProps) => {
 								}))
 							}}
 						/>
-						<span className="mx-2">
+						<label className="mx-2" htmlFor="fantasy-check">
 							Fantasy
-						</span>
+						</label>
 					</div>
 					<div>
 						<input
@@ -146,16 +147,16 @@ const QuizForm = ({ onSubmit }: QuizFormProps) => {
 								}))
 							}}
 						/>
-						<span className="mx-2">
+						<label className="mx-2" htmlFor="futuristic-check">
 							Futuristic
-						</span>
+						</label>
 					</div>
 				</div>
 			</fieldset>
 			<div className="lg:col-span-2">
 				<button
 					type="button"
-					className="bg-teal-400 border-2 border-teal-600 px-4 py-2 rounded hover:bg-teal-600 md:mt-12"
+					className="bg-teal-300 border-2 border-teal-600 px-4 py-2 rounded hover:bg-teal-400 md:mt-12"
 					onClick={() => {
 						onSubmit(currentEntry)
 						setCurrentEntry(defaultEntry)

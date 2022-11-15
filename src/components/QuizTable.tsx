@@ -36,7 +36,7 @@ const QuizTable = ({ entries, onRemove }: QuizTableProps) => {
 			</thead>
 			<tbody>
 				{entries.map((entry, i: number) => (
-					<tr key={JSON.stringify(entry)} className={`text-gray-600 ${i % 2 === 0 ? 'bg-gray-100' : 'bg-gray-300'}`}>
+					<tr key={JSON.stringify(entry)} className={`text-gray-800 ${i % 2 === 0 ? 'bg-gray-100' : 'bg-gray-300'}`}>
 						<td className="py-3 text-left w-2/6 truncate pl-2 md:pl-4">{entry.movieName}</td>
 						<td className="py-3 text-left w-1/6 truncate">{new Array(+entry.stars).fill('★').join('')}</td>
 						<td className="py-3 text-center w-2/6 truncate">
